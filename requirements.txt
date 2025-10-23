@@ -1,0 +1,13 @@
+plotly>=5.18.0
+cmdstanpy==1.2.4
+requests-cache>=1.2.0
+Django==5.0.6
+psycopg2-binary==2.9.9
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+yfinance==0.2.40
+gunicorn==21.2.0
+prophet==1.1.5
+SQLAlchemy==2.0.32
+
