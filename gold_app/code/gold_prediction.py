@@ -111,6 +111,7 @@ def send_to_database(forecast: pd.DataFrame,
 
     engine = create_engine('postgresql+psycopg2://postgres:postgres@postgres-db:5432/gold_db')
     try:
+        forecast = pd.merge(forecast, df[['ds', 'y']], on='ds', how='left')
         forecast.to_sql(table_name , engine, if_exists='replace' , index=False)
         logger.info("Forecast successfully saved to database table '%s'.", table_name)
     except Exception as e:
