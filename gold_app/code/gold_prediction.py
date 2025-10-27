@@ -21,7 +21,6 @@ import requests_cache
 import requests
 
 
-requests_cache.install_cache('yfinance_cache', expire_after=3600)
 
 # Configure logging
 logging.basicConfig(
