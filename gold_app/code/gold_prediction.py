@@ -1,7 +1,7 @@
 '''
 Gold Price Forecasting
 -----------------------
-Downloads gold price data from yfinance site , trains a Prophet time series model ,
+Downloads gold price data from Alphavantage site , trains a Prophet time series model ,
 forecasts the gold price from 2025-2026 , and store the results in a postgreSQL database .
 
 
@@ -36,7 +36,7 @@ def get_data(start = "2023-01-01",
              end = "2025-01-01",
              symbol= "XAUUSD") :
     """
-        Downloads gold price data from Alphacantage.
+        Downloads gold price data from Alphavantage.
         Args:
             symbol: Ticker symbol for the asset (default: XAUUSD).
             start: Start date for data collection.
